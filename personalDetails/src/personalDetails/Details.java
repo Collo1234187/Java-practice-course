@@ -1,0 +1,26 @@
+package personalDetails;
+
+import java.util.Scanner;
+
+public class Details {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+System.out.println("What's your name?");
+String name=scan.nextLine();
+
+System.out.println("What's your age?");
+int age=scan.nextInt();
+
+System.out.println("What is your passion in life and why?");
+String passion=scan.next();
+passion +=scan.nextLine();
+
+System.out.println("Thank you "+name+" you are "+age+" years old");
+System.out.println("and your passion is "+passion);
+
+
+	}
+
+}

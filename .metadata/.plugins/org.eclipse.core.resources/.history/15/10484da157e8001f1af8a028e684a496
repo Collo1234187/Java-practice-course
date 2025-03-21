@@ -1,0 +1,14 @@
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		String r = reverse("holiday");
+		System.out.println(r);
+		
+	}
+	
+	public static String reverse(String s) {
+		return s;
+	}
+
+}

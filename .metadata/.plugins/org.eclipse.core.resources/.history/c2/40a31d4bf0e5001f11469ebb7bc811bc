@@ -1,0 +1,28 @@
+import javax.xml.stream.events.Characters;
+
+public class DuplicateDetermine {
+
+	public static void main(String[] args) {
+		String sentence = "i have been one of the best since the beginning";
+	
+		String character = "";
+		String duplicate = "";
+for(int i = 0;i < sentence.length();i++) {
+	String current = Character.toString(sentence.charAt(i));
+	
+	
+	
+	if(character.contains(current)) {
+	if(!duplicate.contains(current)) {
+	
+	
+	duplicate += current + ",";
+	}
+	}
+character += current;
+}
+System.out.println(duplicate);
+
+
+	}
+}
